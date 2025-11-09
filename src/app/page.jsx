@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Hero />
+      {/* <Hero />
       <About />
       <Team />
       <Services />
-      <Portfolio />
+      <Portfolio /> */}
       <ContactForm />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
