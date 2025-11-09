@@ -1,0 +1,74 @@
+.navbar {
+  width: 90%;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 93%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  background: #fae2d7;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1rem;
+}
+
+.navLinks li a {
+  color: #2F3A43;       
+  font-weight: 400;
+    text-decoration: none;
+}
+.talkBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  background: #F28C53;
+  color: white;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: #2A2A2A;
+}
+
+@media (max-width: 668px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    display: none;
+  }
+
+  .open {
+    display: flex;
+  }
+}
